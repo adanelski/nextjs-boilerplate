@@ -1,9 +1,9 @@
 "use client"
 import { useMemo, useState } from 'react'
-import { DndContext, DragEndEvent } from '@dnd-kit/core'
+import { DndContext, DragEndEvent, PointerSensor, useSensor, useSensors } from '@dnd-kit/core'
 import { SortableContext, useSortable, verticalListSortingStrategy, arrayMove } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
-import { evaluateCondition, nlForCondition } from '@/lib/evaluator'
+import { evaluateCondition, nlForCondition, type ConditionNode } from '@/lib/evaluator'
 
 type Channel = 'SMS' | 'EMAIL' | 'MAIL' | 'PORTAL'
 type MlCommType = 'nurture' | 'proactive' | 'reactive'
@@ -23,7 +23,7 @@ type MlAction = {
 type Action = SpecificAction | MlAction
 
 type Condition = { type: 'CONDITION'; field: string; operator: string; value?: any; value2?: any }
-type ConditionGroup = { type: 'GROUP'; op: 'AND' | 'OR'; children: Condition[] }
+type ConditionGroup = { type: 'GROUP'; op: 'AND' | 'OR'; children: ConditionNode[] }
 
 type Rule = {
   id: string
@@ -74,15 +74,17 @@ function generateCustomers(n: number): Customer[] {
   return out
 }
 
-function SortableItem({ id, children }: { id: string; children: React.ReactNode }) {
+type DragProps = { attributes: any; listeners: any }
+
+function SortableItem({ id, children }: { id: string; children: (drag: DragProps) => React.ReactNode }) {
   const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id })
   const style = {
     transform: CSS.Transform.toString(transform),
     transition,
   }
   return (
-    <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
-      {children}
+    <div ref={setNodeRef} style={style}>
+      {children({ attributes, listeners })}
     </div>
   )
 }
@@ -147,37 +149,6 @@ export default function Home() {
     setRules(reordered)
   }
 
-  function addCondition() {
-    if (!selectedRule) return
-    const nextCond: Condition = { type: 'CONDITION', field: 'scores.refiPropensity', operator: '>', value: 0.5 }
-    updateRule({ conditions: { ...selectedRule.conditions, children: [...selectedRule.conditions.children, nextCond] } })
-  }
-
-  function updateCondition(idx: number, patch: Partial<Condition>) {
-    if (!selectedRule) return
-    const cloned = [...selectedRule.conditions.children]
-    cloned[idx] = { ...cloned[idx], ...patch }
-    updateRule({ conditions: { ...selectedRule.conditions, children: cloned } })
-  }
-
-  function removeCondition(idx: number) {
-    if (!selectedRule) return
-    const cloned = [...selectedRule.conditions.children]
-    cloned.splice(idx, 1)
-    updateRule({ conditions: { ...selectedRule.conditions, children: cloned } })
-  }
-
-  function onDragEndConds(e: DragEndEvent) {
-    if (!selectedRule) return
-    const ids = selectedRule.conditions.children.map((_, i) => `${selectedRule.id}-cond-${i}`)
-    const { active, over } = e
-    if (!over || active.id === over.id) return
-    const oldIndex = ids.indexOf(active.id as string)
-    const newIndex = ids.indexOf(over.id as string)
-    const reordered = arrayMove(selectedRule.conditions.children, oldIndex, newIndex)
-    updateRule({ conditions: { ...selectedRule.conditions, children: reordered } })
-  }
-
   function runTest() {
     const results = customers.map(cust => {
       let matched: Rule | undefined
@@ -196,6 +167,8 @@ export default function Home() {
 
   const conditionsNL = selectedRule ? nlForCondition(selectedRule.conditions as any) : ''
 
+  const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 8 } }))
+
   return (
     <div className="min-h-screen p-6 md:p-8 space-y-6">
       <div className="flex items-center justify-between">
@@ -213,17 +186,22 @@ export default function Home() {
             <div className="font-medium">Rules (drag to reorder)</div>
             <button onClick={addRule} className="rounded border px-2 py-1 text-sm hover:bg-gray-50">Add Rule</button>
           </div>
-          <DndContext onDragEnd={onDragEndRules}>
+          <DndContext sensors={sensors} onDragEnd={onDragEndRules}>
             <SortableContext items={rules.map(r => r.id)} strategy={verticalListSortingStrategy}>
               <ul className="space-y-2">
                 {rules.map(r => (
                   <SortableItem key={r.id} id={r.id}>
-                    <li className={`rounded border p-3 cursor-grab ${selectedRuleId === r.id ? 'ring-2 ring-blue-500' : ''}`} onClick={() => setSelectedRuleId(r.id)}>
-                      <div className="flex items-center justify-between">
-                        <div className="font-medium">{r.priority}. {r.name}</div>
-                        <button onClick={(e) => { e.stopPropagation(); deleteRule(r.id) }} className="text-red-600 text-sm">Delete</button>
-                      </div>
-                    </li>
+                    {({ attributes, listeners }) => (
+                      <li className={`rounded border p-3 ${selectedRuleId === r.id ? 'ring-2 ring-blue-500' : ''}`} onClick={() => setSelectedRuleId(r.id)}>
+                        <div className="flex items-center justify-between gap-3">
+                          <div className="flex items-center gap-2">
+                            <button title="Drag" className="cursor-grab px-2 py-1 rounded border bg-white text-gray-700" onMouseDown={(e)=>e.stopPropagation()} {...attributes} {...listeners}>⠿</button>
+                            <div className="font-medium">{r.priority}. {r.name}</div>
+                          </div>
+                          <button onClick={(e) => { e.stopPropagation(); deleteRule(r.id) }} className="text-red-600 text-sm">Delete</button>
+                        </div>
+                      </li>
+                    )}
                   </SortableItem>
                 ))}
               </ul>
@@ -247,36 +225,9 @@ export default function Home() {
 
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
-                  <div className="font-medium">Conditions (drag to reorder)</div>
-                  <button onClick={addCondition} className="rounded border px-2 py-1 text-sm hover:bg-gray-50">Add Condition</button>
+                  <div className="font-medium">Conditions</div>
                 </div>
-                <DndContext onDragEnd={onDragEndConds}>
-                  <SortableContext items={selectedRule.conditions.children.map((_, i) => `${selectedRule.id}-cond-${i}`)} strategy={verticalListSortingStrategy}>
-                    <ul className="space-y-2">
-                      {selectedRule.conditions.children.map((c, idx) => (
-                        <SortableItem key={`${selectedRule.id}-cond-${idx}`} id={`${selectedRule.id}-cond-${idx}`}>
-                          <li className="rounded border p-3 grid grid-cols-1 md:grid-cols-6 gap-2 items-center">
-                            <select className="border rounded px-2 py-2 md:col-span-2" value={c.field} onChange={e => updateCondition(idx, { field: e.target.value })}>
-                              {FIELD_OPTIONS.map(f => <option key={f.key} value={f.key}>{f.label}</option>)}
-                            </select>
-                            <select className="border rounded px-2 py-2" value={c.operator} onChange={e => updateCondition(idx, { operator: e.target.value })}>
-                              {OPERATORS.map(op => <option key={op} value={op}>{op}</option>)}
-                            </select>
-                            {c.operator === 'BETWEEN' ? (
-                              <>
-                                <input className="border rounded px-2 py-2" placeholder="Value 1" value={c.value ?? ''} onChange={e => updateCondition(idx, { value: e.target.value })} />
-                                <input className="border rounded px-2 py-2" placeholder="Value 2" value={c.value2 ?? ''} onChange={e => updateCondition(idx, { value2: e.target.value })} />
-                              </>
-                            ) : (
-                              <input className="border rounded px-2 py-2 md:col-span-2" placeholder="Value" value={c.value ?? ''} onChange={e => updateCondition(idx, { value: e.target.value })} />
-                            )}
-                            <button onClick={() => removeCondition(idx)} className="text-red-600 text-sm">Remove</button>
-                          </li>
-                        </SortableItem>
-                      ))}
-                    </ul>
-                  </SortableContext>
-                </DndContext>
+                <ConditionEditor node={selectedRule.conditions} onChange={(n)=>updateRule({ conditions: n as any })} />
                 <div className="text-sm text-gray-600">NL Preview: {conditionsNL}</div>
               </div>
 
@@ -372,6 +323,84 @@ export default function Home() {
             )}
           </div>
         </div>
+      </div>
+    </div>
+  )
+}
+
+type ConditionEditorProps = {
+  node: ConditionGroup | Condition
+  onChange: (node: ConditionGroup | Condition) => void
+}
+
+function ConditionEditor({ node, onChange }: ConditionEditorProps) {
+  if ((node as any).type === 'CONDITION') {
+    const c = node as Condition
+    return (
+      <div className="rounded border p-3 grid grid-cols-1 md:grid-cols-6 gap-2 items-center">
+        <div className="md:col-span-2">
+          <select className="border rounded px-2 py-2 w-full" value={c.field} onChange={e => onChange({ ...c, field: e.target.value })}>
+            {FIELD_OPTIONS.map(f => <option key={f.key} value={f.key}>{f.label}</option>)}
+          </select>
+        </div>
+        <div>
+          <select className="border rounded px-2 py-2 w-full" value={c.operator} onChange={e => onChange({ ...c, operator: e.target.value })}>
+            {OPERATORS.map(op => <option key={op} value={op}>{op}</option>)}
+          </select>
+        </div>
+        {c.operator === 'BETWEEN' ? (
+          <>
+            <input className="border rounded px-2 py-2" placeholder="Value 1" value={c.value ?? ''} onChange={e => onChange({ ...c, value: e.target.value })} />
+            <input className="border rounded px-2 py-2" placeholder="Value 2" value={c.value2 ?? ''} onChange={e => onChange({ ...c, value2: e.target.value })} />
+          </>
+        ) : (
+          <input className="border rounded px-2 py-2 md:col-span-2" placeholder="Value (comma list for IN/OUT)" value={c.value ?? ''}
+            onChange={e => onChange({ ...c, value: e.target.value })} />
+        )}
+        <div className="text-right">
+          <button onClick={() => onChange({ ...c, field: 'scores.refiPropensity', operator: '>', value: 0.5 })} className="text-xs text-gray-500 underline">Reset</button>
+        </div>
+      </div>
+    )
+  }
+
+  const g = node as ConditionGroup
+  function updateChild(index: number, child: ConditionGroup | Condition) {
+    const cloned = [...g.children]
+    cloned[index] = child
+    onChange({ ...g, children: cloned })
+  }
+  function addCondition() {
+    onChange({ ...g, children: [...g.children, { type: 'CONDITION', field: 'scores.refiPropensity', operator: '>', value: 0.5 } as any] })
+  }
+  function addGroup() {
+    onChange({ ...g, children: [...g.children, { type: 'GROUP', op: 'AND', children: [] as any }] as any })
+  }
+  function removeIndex(index: number) {
+    const cloned = [...g.children]
+    cloned.splice(index, 1)
+    onChange({ ...g, children: cloned })
+  }
+  return (
+    <div className="space-y-2">
+      <div className="flex items-center gap-2">
+        <span className="text-xs uppercase text-gray-600">Group</span>
+        <select className="border rounded px-2 py-1 text-sm" value={g.op} onChange={e => onChange({ ...g, op: e.target.value as 'AND' | 'OR' })}>
+          <option value="AND">AND</option>
+          <option value="OR">OR</option>
+        </select>
+        <button onClick={addCondition} className="rounded border px-2 py-1 text-sm hover:bg-gray-50">+ Condition</button>
+        <button onClick={addGroup} className="rounded border px-2 py-1 text-sm hover:bg-gray-50">+ Group</button>
+      </div>
+      <div className="space-y-2">
+        {g.children.map((child, idx) => (
+          <div key={idx} className="space-y-2">
+            <ConditionEditor node={child as any} onChange={(n)=>updateChild(idx, n)} />
+            <div className="text-right">
+              <button onClick={() => removeIndex(idx)} className="text-xs text-red-600">Remove</button>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )

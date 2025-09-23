@@ -1,0 +1,6302 @@
+[
+  {
+    "id": "CUST-1",
+    "firstName": "Test1",
+    "lastName": "User1",
+    "dateOfBirth": "1980-01-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90000",
+      "value": 372516,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 864572,
+      "remainingBalance": 855907,
+      "currentRate": 5.44,
+      "originalAmount": 878076,
+      "ficoAtOrigination": 672,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2010-01-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": true,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2408,
+      "taxesInsurance": 1084,
+      "pmi": null,
+      "currentApr": 5.99
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 91,
+      "previousResponseRate": 0.49
+    },
+    "scores": {
+      "refiPropensity": 0.78,
+      "churnRisk": 0.15,
+      "purchaseIntent": 0.01,
+      "expectedValue": 828,
+      "msrLtv": 4133
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-2",
+    "firstName": "Test2",
+    "lastName": "User2",
+    "dateOfBirth": "1981-02-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90001",
+      "value": 906214,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 246318,
+      "remainingBalance": 235252,
+      "currentRate": 5.93,
+      "originalAmount": 342117,
+      "ficoAtOrigination": 712,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2011-02-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 4362,
+      "taxesInsurance": 360,
+      "pmi": null,
+      "currentApr": 6.21
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 360,
+      "previousResponseRate": 0.01
+    },
+    "scores": {
+      "refiPropensity": 0.31,
+      "churnRisk": 0.51,
+      "purchaseIntent": 0.79,
+      "expectedValue": 1001,
+      "msrLtv": 37187
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-3",
+    "firstName": "Test3",
+    "lastName": "User3",
+    "dateOfBirth": "1982-03-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90002",
+      "value": 1019193,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 923827,
+      "remainingBalance": 920916,
+      "currentRate": 3.6,
+      "originalAmount": 952776,
+      "ficoAtOrigination": 653,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2012-03-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3989,
+      "taxesInsurance": 678,
+      "pmi": null,
+      "currentApr": 6.66
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 261,
+      "previousResponseRate": 0.46
+    },
+    "scores": {
+      "refiPropensity": 0.73,
+      "churnRisk": 0.73,
+      "purchaseIntent": 0.19,
+      "expectedValue": 5587,
+      "msrLtv": 3172
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-4",
+    "firstName": "Test4",
+    "lastName": "User4",
+    "dateOfBirth": "1983-04-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90003",
+      "value": 256109,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 647188,
+      "remainingBalance": 636982,
+      "currentRate": 4.7,
+      "originalAmount": 691671,
+      "ficoAtOrigination": 684,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2013-04-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2584,
+      "taxesInsurance": 440,
+      "pmi": null,
+      "currentApr": 4.17
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 131,
+      "previousResponseRate": 0.29
+    },
+    "scores": {
+      "refiPropensity": 0.03,
+      "churnRisk": 0.09,
+      "purchaseIntent": 0.65,
+      "expectedValue": 3959,
+      "msrLtv": 67600
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-5",
+    "firstName": "Test5",
+    "lastName": "User5",
+    "dateOfBirth": "1984-05-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90004",
+      "value": 709350,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 725034,
+      "remainingBalance": 716944,
+      "currentRate": 5.24,
+      "originalAmount": 784637,
+      "ficoAtOrigination": 632,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2014-05-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 1,
+      "forbearance": true,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 5107,
+      "taxesInsurance": 445,
+      "pmi": null,
+      "currentApr": 5.4
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 329,
+      "previousResponseRate": 0.41
+    },
+    "scores": {
+      "refiPropensity": 0.8,
+      "churnRisk": 0.96,
+      "purchaseIntent": 0.41,
+      "expectedValue": 2540,
+      "msrLtv": 52503
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-6",
+    "firstName": "Test6",
+    "lastName": "User6",
+    "dateOfBirth": "1985-06-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90005",
+      "value": 856463,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 464469,
+      "remainingBalance": 459588,
+      "currentRate": 5.37,
+      "originalAmount": 531773,
+      "ficoAtOrigination": 758,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2015-06-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1540,
+      "taxesInsurance": 1136,
+      "pmi": null,
+      "currentApr": 6.5
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 287,
+      "previousResponseRate": 0.49
+    },
+    "scores": {
+      "refiPropensity": 0.07,
+      "churnRisk": 0.55,
+      "purchaseIntent": 0.32,
+      "expectedValue": 9305,
+      "msrLtv": 56068
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-7",
+    "firstName": "Test7",
+    "lastName": "User7",
+    "dateOfBirth": "1986-07-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90006",
+      "value": 222785,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 679133,
+      "remainingBalance": 661654,
+      "currentRate": 4.22,
+      "originalAmount": 700265,
+      "ficoAtOrigination": 763,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2016-07-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 5127,
+      "taxesInsurance": 799,
+      "pmi": 124,
+      "currentApr": 6.66
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 295,
+      "previousResponseRate": 1
+    },
+    "scores": {
+      "refiPropensity": 0.85,
+      "churnRisk": 0.42,
+      "purchaseIntent": 0.88,
+      "expectedValue": 1078,
+      "msrLtv": 50542
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-8",
+    "firstName": "Test8",
+    "lastName": "User8",
+    "dateOfBirth": "1987-08-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90007",
+      "value": 305750,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 648431,
+      "remainingBalance": 636473,
+      "currentRate": 5.75,
+      "originalAmount": 687165,
+      "ficoAtOrigination": 782,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2017-08-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1468,
+      "taxesInsurance": 354,
+      "pmi": null,
+      "currentApr": 3.09
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 191,
+      "previousResponseRate": 0.14
+    },
+    "scores": {
+      "refiPropensity": 0.52,
+      "churnRisk": 0.25,
+      "purchaseIntent": 0.61,
+      "expectedValue": 158,
+      "msrLtv": 62425
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-9",
+    "firstName": "Test9",
+    "lastName": "User9",
+    "dateOfBirth": "1988-09-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": true,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90008",
+      "value": 640376,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 110789,
+      "remainingBalance": 94253,
+      "currentRate": 2.14,
+      "originalAmount": 183579,
+      "ficoAtOrigination": 640,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2018-09-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2418,
+      "taxesInsurance": 375,
+      "pmi": null,
+      "currentApr": 5.77
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 7,
+      "previousResponseRate": 0.74
+    },
+    "scores": {
+      "refiPropensity": 0.86,
+      "churnRisk": 0.35,
+      "purchaseIntent": 0.32,
+      "expectedValue": 2283,
+      "msrLtv": 68029
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-10",
+    "firstName": "Test10",
+    "lastName": "User10",
+    "dateOfBirth": "1989-01-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90009",
+      "value": 1192724,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 69922,
+      "remainingBalance": 52872,
+      "currentRate": 3.7,
+      "originalAmount": 109707,
+      "ficoAtOrigination": 791,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2019-01-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1283,
+      "taxesInsurance": 637,
+      "pmi": null,
+      "currentApr": 5.87
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 40,
+      "previousResponseRate": 0.83
+    },
+    "scores": {
+      "refiPropensity": 0.33,
+      "churnRisk": 0.17,
+      "purchaseIntent": 0.59,
+      "expectedValue": 4845,
+      "msrLtv": 16853
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-11",
+    "firstName": "Test11",
+    "lastName": "User11",
+    "dateOfBirth": "1980-02-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90010",
+      "value": 1072721,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 677586,
+      "remainingBalance": 666900,
+      "currentRate": 5.12,
+      "originalAmount": 745954,
+      "ficoAtOrigination": 646,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2010-02-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2553,
+      "taxesInsurance": 976,
+      "pmi": null,
+      "currentApr": 2.64
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 5,
+      "previousResponseRate": 0.62
+    },
+    "scores": {
+      "refiPropensity": 0.51,
+      "churnRisk": 0.8,
+      "purchaseIntent": 0.38,
+      "expectedValue": 4957,
+      "msrLtv": 44803
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-12",
+    "firstName": "Test12",
+    "lastName": "User12",
+    "dateOfBirth": "1981-03-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90011",
+      "value": 1034803,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 626733,
+      "remainingBalance": 615488,
+      "currentRate": 2.39,
+      "originalAmount": 708450,
+      "ficoAtOrigination": 626,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2011-03-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 5217,
+      "taxesInsurance": 1172,
+      "pmi": null,
+      "currentApr": 5.53
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 44,
+      "previousResponseRate": 0.03
+    },
+    "scores": {
+      "refiPropensity": 0.47,
+      "churnRisk": 0.37,
+      "purchaseIntent": 0.19,
+      "expectedValue": 7830,
+      "msrLtv": 55123
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-13",
+    "firstName": "Test13",
+    "lastName": "User13",
+    "dateOfBirth": "1982-04-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90012",
+      "value": 917184,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 157881,
+      "remainingBalance": 157293,
+      "currentRate": 6.13,
+      "originalAmount": 220995,
+      "ficoAtOrigination": 709,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2012-04-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 4041,
+      "taxesInsurance": 897,
+      "pmi": null,
+      "currentApr": 5.84
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 227,
+      "previousResponseRate": 0.02
+    },
+    "scores": {
+      "refiPropensity": 0.03,
+      "churnRisk": 0.87,
+      "purchaseIntent": 0.97,
+      "expectedValue": 6466,
+      "msrLtv": 86019
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-14",
+    "firstName": "Test14",
+    "lastName": "User14",
+    "dateOfBirth": "1983-05-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90013",
+      "value": 994587,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 555736,
+      "remainingBalance": 540562,
+      "currentRate": 6.65,
+      "originalAmount": 634497,
+      "ficoAtOrigination": 794,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2013-05-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2884,
+      "taxesInsurance": 854,
+      "pmi": 64,
+      "currentApr": 5.03
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 54,
+      "previousResponseRate": 0.94
+    },
+    "scores": {
+      "refiPropensity": 0.91,
+      "churnRisk": 0.97,
+      "purchaseIntent": 0.63,
+      "expectedValue": 4303,
+      "msrLtv": 6496
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-15",
+    "firstName": "Test15",
+    "lastName": "User15",
+    "dateOfBirth": "1984-06-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90014",
+      "value": 295059,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 490111,
+      "remainingBalance": 482639,
+      "currentRate": 4.62,
+      "originalAmount": 533142,
+      "ficoAtOrigination": 726,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2014-06-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3411,
+      "taxesInsurance": 663,
+      "pmi": 128,
+      "currentApr": 2.31
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 284,
+      "previousResponseRate": 0.28
+    },
+    "scores": {
+      "refiPropensity": 0.76,
+      "churnRisk": 0.06,
+      "purchaseIntent": 0.44,
+      "expectedValue": 3804,
+      "msrLtv": 8657
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-16",
+    "firstName": "Test16",
+    "lastName": "User16",
+    "dateOfBirth": "1985-07-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90015",
+      "value": 938268,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 434084,
+      "remainingBalance": 417913,
+      "currentRate": 3.96,
+      "originalAmount": 494883,
+      "ficoAtOrigination": 767,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2015-07-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 5340,
+      "taxesInsurance": 1005,
+      "pmi": null,
+      "currentApr": 2.94
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 264,
+      "previousResponseRate": 0.7
+    },
+    "scores": {
+      "refiPropensity": 0.62,
+      "churnRisk": 0.13,
+      "purchaseIntent": 0.52,
+      "expectedValue": 5954,
+      "msrLtv": 75325
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-17",
+    "firstName": "Test17",
+    "lastName": "User17",
+    "dateOfBirth": "1986-08-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90016",
+      "value": 321486,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 855074,
+      "remainingBalance": 850059,
+      "currentRate": 3.25,
+      "originalAmount": 896839,
+      "ficoAtOrigination": 642,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2016-08-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4665,
+      "taxesInsurance": 895,
+      "pmi": 97,
+      "currentApr": 2.46
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 21,
+      "previousResponseRate": 0.56
+    },
+    "scores": {
+      "refiPropensity": 0.15,
+      "churnRisk": 0.89,
+      "purchaseIntent": 0.93,
+      "expectedValue": 6967,
+      "msrLtv": 26514
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-18",
+    "firstName": "Test18",
+    "lastName": "User18",
+    "dateOfBirth": "1987-09-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": true,
+      "emailAddress": false,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90017",
+      "value": 602073,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 412317,
+      "remainingBalance": 397952,
+      "currentRate": 6.23,
+      "originalAmount": 456743,
+      "ficoAtOrigination": 752,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2017-09-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3213,
+      "taxesInsurance": 831,
+      "pmi": null,
+      "currentApr": 5.43
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 229,
+      "previousResponseRate": 0.7
+    },
+    "scores": {
+      "refiPropensity": 0.71,
+      "churnRisk": 0.8,
+      "purchaseIntent": 0.4,
+      "expectedValue": 2377,
+      "msrLtv": 88418
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-19",
+    "firstName": "Test19",
+    "lastName": "User19",
+    "dateOfBirth": "1988-01-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": true,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90018",
+      "value": 527889,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 140613,
+      "remainingBalance": 120805,
+      "currentRate": 4.38,
+      "originalAmount": 151757,
+      "ficoAtOrigination": 776,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2018-01-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3769,
+      "taxesInsurance": 1145,
+      "pmi": 142,
+      "currentApr": 2.47
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 173,
+      "previousResponseRate": 0.34
+    },
+    "scores": {
+      "refiPropensity": 0.82,
+      "churnRisk": 0.37,
+      "purchaseIntent": 0.83,
+      "expectedValue": 7111,
+      "msrLtv": 1664
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-20",
+    "firstName": "Test20",
+    "lastName": "User20",
+    "dateOfBirth": "1989-02-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90019",
+      "value": 700649,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 751320,
+      "remainingBalance": 738924,
+      "currentRate": 6,
+      "originalAmount": 813397,
+      "ficoAtOrigination": 743,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2019-02-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 1,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 3027,
+      "taxesInsurance": 1142,
+      "pmi": null,
+      "currentApr": 6.87
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 257,
+      "previousResponseRate": 0.21
+    },
+    "scores": {
+      "refiPropensity": 0.81,
+      "churnRisk": 0.65,
+      "purchaseIntent": 0.07,
+      "expectedValue": 4138,
+      "msrLtv": 22867
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-21",
+    "firstName": "Test21",
+    "lastName": "User21",
+    "dateOfBirth": "1980-03-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90020",
+      "value": 338906,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 164901,
+      "remainingBalance": 160081,
+      "currentRate": 6.17,
+      "originalAmount": 243106,
+      "ficoAtOrigination": 690,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2010-03-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1449,
+      "taxesInsurance": 1192,
+      "pmi": null,
+      "currentApr": 6.5
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 230,
+      "previousResponseRate": 0.05
+    },
+    "scores": {
+      "refiPropensity": 0.87,
+      "churnRisk": 0.99,
+      "purchaseIntent": 0.56,
+      "expectedValue": 3475,
+      "msrLtv": 26024
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-22",
+    "firstName": "Test22",
+    "lastName": "User22",
+    "dateOfBirth": "1981-04-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90021",
+      "value": 551812,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 557166,
+      "remainingBalance": 538022,
+      "currentRate": 3.29,
+      "originalAmount": 607157,
+      "ficoAtOrigination": 732,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2011-04-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3102,
+      "taxesInsurance": 809,
+      "pmi": 184,
+      "currentApr": 5.24
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 95,
+      "previousResponseRate": 0.31
+    },
+    "scores": {
+      "refiPropensity": 0.27,
+      "churnRisk": 0.94,
+      "purchaseIntent": 0.73,
+      "expectedValue": 1697,
+      "msrLtv": 11898
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-23",
+    "firstName": "Test23",
+    "lastName": "User23",
+    "dateOfBirth": "1982-05-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90022",
+      "value": 1153052,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 384468,
+      "remainingBalance": 377566,
+      "currentRate": 5.68,
+      "originalAmount": 390673,
+      "ficoAtOrigination": 655,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2012-05-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": true,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4470,
+      "taxesInsurance": 795,
+      "pmi": 219,
+      "currentApr": 3.21
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 276,
+      "previousResponseRate": 0.34
+    },
+    "scores": {
+      "refiPropensity": 0.53,
+      "churnRisk": 0.43,
+      "purchaseIntent": 0.95,
+      "expectedValue": 296,
+      "msrLtv": 43324
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-24",
+    "firstName": "Test24",
+    "lastName": "User24",
+    "dateOfBirth": "1983-06-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90023",
+      "value": 985138,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 669447,
+      "remainingBalance": 660526,
+      "currentRate": 4.82,
+      "originalAmount": 721466,
+      "ficoAtOrigination": 685,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2013-06-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2976,
+      "taxesInsurance": 594,
+      "pmi": null,
+      "currentApr": 6.22
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 21,
+      "previousResponseRate": 0.55
+    },
+    "scores": {
+      "refiPropensity": 0.56,
+      "churnRisk": 0.85,
+      "purchaseIntent": 0.29,
+      "expectedValue": 4834,
+      "msrLtv": 20439
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-25",
+    "firstName": "Test25",
+    "lastName": "User25",
+    "dateOfBirth": "1984-07-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90024",
+      "value": 899841,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 323043,
+      "remainingBalance": 311894,
+      "currentRate": 3,
+      "originalAmount": 394285,
+      "ficoAtOrigination": 756,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2014-07-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4846,
+      "taxesInsurance": 750,
+      "pmi": null,
+      "currentApr": 6.37
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 234,
+      "previousResponseRate": 0.16
+    },
+    "scores": {
+      "refiPropensity": 0.83,
+      "churnRisk": 0.92,
+      "purchaseIntent": 0.96,
+      "expectedValue": 5598,
+      "msrLtv": 7000
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-26",
+    "firstName": "Test26",
+    "lastName": "User26",
+    "dateOfBirth": "1985-08-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": true,
+      "emailAddress": false,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90025",
+      "value": 986212,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 588524,
+      "remainingBalance": 577335,
+      "currentRate": 2.5,
+      "originalAmount": 675793,
+      "ficoAtOrigination": 773,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2015-08-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 1466,
+      "taxesInsurance": 920,
+      "pmi": 219,
+      "currentApr": 6.39
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 157,
+      "previousResponseRate": 0.03
+    },
+    "scores": {
+      "refiPropensity": 0.35,
+      "churnRisk": 0.86,
+      "purchaseIntent": 0.69,
+      "expectedValue": 8863,
+      "msrLtv": 60155
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-27",
+    "firstName": "Test27",
+    "lastName": "User27",
+    "dateOfBirth": "1986-09-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90026",
+      "value": 420489,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 467645,
+      "remainingBalance": 451806,
+      "currentRate": 4.78,
+      "originalAmount": 514587,
+      "ficoAtOrigination": 628,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2016-09-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 5186,
+      "taxesInsurance": 590,
+      "pmi": null,
+      "currentApr": 3.71
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 66,
+      "previousResponseRate": 0.01
+    },
+    "scores": {
+      "refiPropensity": 0.02,
+      "churnRisk": 0.52,
+      "purchaseIntent": 0.77,
+      "expectedValue": 3082,
+      "msrLtv": 41999
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-28",
+    "firstName": "Test28",
+    "lastName": "User28",
+    "dateOfBirth": "1987-01-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90027",
+      "value": 558024,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 218112,
+      "remainingBalance": 213564,
+      "currentRate": 6.87,
+      "originalAmount": 274799,
+      "ficoAtOrigination": 774,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2017-01-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3582,
+      "taxesInsurance": 269,
+      "pmi": 101,
+      "currentApr": 4.41
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 208,
+      "previousResponseRate": 0.79
+    },
+    "scores": {
+      "refiPropensity": 0.39,
+      "churnRisk": 0.41,
+      "purchaseIntent": 0.59,
+      "expectedValue": 5007,
+      "msrLtv": 76985
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-29",
+    "firstName": "Test29",
+    "lastName": "User29",
+    "dateOfBirth": "1988-02-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90028",
+      "value": 541339,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 933670,
+      "remainingBalance": 920617,
+      "currentRate": 4.05,
+      "originalAmount": 952219,
+      "ficoAtOrigination": 699,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2018-02-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4909,
+      "taxesInsurance": 681,
+      "pmi": 133,
+      "currentApr": 3.15
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 20,
+      "previousResponseRate": 0.72
+    },
+    "scores": {
+      "refiPropensity": 0.05,
+      "churnRisk": 0.65,
+      "purchaseIntent": 0.3,
+      "expectedValue": 1755,
+      "msrLtv": 46346
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-30",
+    "firstName": "Test30",
+    "lastName": "User30",
+    "dateOfBirth": "1989-03-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90029",
+      "value": 541963,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 424435,
+      "remainingBalance": 421711,
+      "currentRate": 4.94,
+      "originalAmount": 429725,
+      "ficoAtOrigination": 723,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2019-03-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4695,
+      "taxesInsurance": 605,
+      "pmi": null,
+      "currentApr": 2.16
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 150,
+      "previousResponseRate": 0.32
+    },
+    "scores": {
+      "refiPropensity": 0.62,
+      "churnRisk": 0.99,
+      "purchaseIntent": 0.34,
+      "expectedValue": 6597,
+      "msrLtv": 86914
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-31",
+    "firstName": "Test31",
+    "lastName": "User31",
+    "dateOfBirth": "1980-04-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": true,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90030",
+      "value": 397713,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 936231,
+      "remainingBalance": 923331,
+      "currentRate": 2.99,
+      "originalAmount": 966619,
+      "ficoAtOrigination": 609,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2010-04-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 5248,
+      "taxesInsurance": 496,
+      "pmi": null,
+      "currentApr": 5.87
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 51,
+      "previousResponseRate": 0.22
+    },
+    "scores": {
+      "refiPropensity": 0.54,
+      "churnRisk": 0.02,
+      "purchaseIntent": 0.15,
+      "expectedValue": 3189,
+      "msrLtv": 41355
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-32",
+    "firstName": "Test32",
+    "lastName": "User32",
+    "dateOfBirth": "1981-05-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90031",
+      "value": 306318,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 547268,
+      "remainingBalance": 527332,
+      "currentRate": 3.57,
+      "originalAmount": 618969,
+      "ficoAtOrigination": 737,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2011-05-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": true,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3864,
+      "taxesInsurance": 607,
+      "pmi": null,
+      "currentApr": 3.56
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 125,
+      "previousResponseRate": 0.95
+    },
+    "scores": {
+      "refiPropensity": 0.59,
+      "churnRisk": 0.76,
+      "purchaseIntent": 0.45,
+      "expectedValue": 4121,
+      "msrLtv": 24267
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-33",
+    "firstName": "Test33",
+    "lastName": "User33",
+    "dateOfBirth": "1982-06-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90032",
+      "value": 1136761,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 422747,
+      "remainingBalance": 421285,
+      "currentRate": 5.14,
+      "originalAmount": 425830,
+      "ficoAtOrigination": 678,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2012-06-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1386,
+      "taxesInsurance": 454,
+      "pmi": null,
+      "currentApr": 2.25
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 156,
+      "previousResponseRate": 0.56
+    },
+    "scores": {
+      "refiPropensity": 0.4,
+      "churnRisk": 0.85,
+      "purchaseIntent": 0.65,
+      "expectedValue": 216,
+      "msrLtv": 54968
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-34",
+    "firstName": "Test34",
+    "lastName": "User34",
+    "dateOfBirth": "1983-07-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90033",
+      "value": 666422,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 573439,
+      "remainingBalance": 560651,
+      "currentRate": 3.24,
+      "originalAmount": 635505,
+      "ficoAtOrigination": 725,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2013-07-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3409,
+      "taxesInsurance": 349,
+      "pmi": null,
+      "currentApr": 2.84
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 322,
+      "previousResponseRate": 0.14
+    },
+    "scores": {
+      "refiPropensity": 0.93,
+      "churnRisk": 0.11,
+      "purchaseIntent": 0.35,
+      "expectedValue": 7,
+      "msrLtv": 79632
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-35",
+    "firstName": "Test35",
+    "lastName": "User35",
+    "dateOfBirth": "1984-08-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90034",
+      "value": 473832,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 173710,
+      "remainingBalance": 167537,
+      "currentRate": 4.8,
+      "originalAmount": 227043,
+      "ficoAtOrigination": 678,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2014-08-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 4171,
+      "taxesInsurance": 424,
+      "pmi": null,
+      "currentApr": 6.17
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 189,
+      "previousResponseRate": 0.71
+    },
+    "scores": {
+      "refiPropensity": 0.91,
+      "churnRisk": 0.27,
+      "purchaseIntent": 0.82,
+      "expectedValue": 276,
+      "msrLtv": 56343
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-36",
+    "firstName": "Test36",
+    "lastName": "User36",
+    "dateOfBirth": "1985-09-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90035",
+      "value": 698582,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 354384,
+      "remainingBalance": 345290,
+      "currentRate": 5.61,
+      "originalAmount": 417667,
+      "ficoAtOrigination": 661,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2015-09-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": true,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1662,
+      "taxesInsurance": 915,
+      "pmi": null,
+      "currentApr": 4.98
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 223,
+      "previousResponseRate": 0.27
+    },
+    "scores": {
+      "refiPropensity": 0.87,
+      "churnRisk": 0.13,
+      "purchaseIntent": 0.13,
+      "expectedValue": 104,
+      "msrLtv": 79168
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-37",
+    "firstName": "Test37",
+    "lastName": "User37",
+    "dateOfBirth": "1986-01-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90036",
+      "value": 663858,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 609603,
+      "remainingBalance": 598230,
+      "currentRate": 4.43,
+      "originalAmount": 655174,
+      "ficoAtOrigination": 749,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2016-01-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3870,
+      "taxesInsurance": 650,
+      "pmi": null,
+      "currentApr": 3.75
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 220,
+      "previousResponseRate": 0.25
+    },
+    "scores": {
+      "refiPropensity": 0.35,
+      "churnRisk": 0.55,
+      "purchaseIntent": 0.19,
+      "expectedValue": 7696,
+      "msrLtv": 45419
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-38",
+    "firstName": "Test38",
+    "lastName": "User38",
+    "dateOfBirth": "1987-02-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90037",
+      "value": 374923,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 587520,
+      "remainingBalance": 575009,
+      "currentRate": 6.4,
+      "originalAmount": 654062,
+      "ficoAtOrigination": 676,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2017-02-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": true,
+      "impound": true,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 5216,
+      "taxesInsurance": 885,
+      "pmi": null,
+      "currentApr": 5.94
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 264,
+      "previousResponseRate": 0.89
+    },
+    "scores": {
+      "refiPropensity": 0.73,
+      "churnRisk": 0.37,
+      "purchaseIntent": 0.92,
+      "expectedValue": 8252,
+      "msrLtv": 58989
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-39",
+    "firstName": "Test39",
+    "lastName": "User39",
+    "dateOfBirth": "1988-03-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90038",
+      "value": 902100,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 421750,
+      "remainingBalance": 407603,
+      "currentRate": 5.81,
+      "originalAmount": 452643,
+      "ficoAtOrigination": 795,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2018-03-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2854,
+      "taxesInsurance": 211,
+      "pmi": 177,
+      "currentApr": 2.41
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 334,
+      "previousResponseRate": 0.91
+    },
+    "scores": {
+      "refiPropensity": 0.34,
+      "churnRisk": 0.43,
+      "purchaseIntent": 0.67,
+      "expectedValue": 5740,
+      "msrLtv": 17631
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-40",
+    "firstName": "Test40",
+    "lastName": "User40",
+    "dateOfBirth": "1989-04-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90039",
+      "value": 998774,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 624733,
+      "remainingBalance": 623516,
+      "currentRate": 3.6,
+      "originalAmount": 638987,
+      "ficoAtOrigination": 759,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2019-04-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": true,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3363,
+      "taxesInsurance": 287,
+      "pmi": null,
+      "currentApr": 6.43
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 291,
+      "previousResponseRate": 0.2
+    },
+    "scores": {
+      "refiPropensity": 0.16,
+      "churnRisk": 0.84,
+      "purchaseIntent": 0.65,
+      "expectedValue": 7484,
+      "msrLtv": 79247
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-41",
+    "firstName": "Test41",
+    "lastName": "User41",
+    "dateOfBirth": "1980-05-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": true,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90040",
+      "value": 253262,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 234017,
+      "remainingBalance": 220768,
+      "currentRate": 2.85,
+      "originalAmount": 251080,
+      "ficoAtOrigination": 664,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2010-05-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1693,
+      "taxesInsurance": 976,
+      "pmi": null,
+      "currentApr": 6.87
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 237,
+      "previousResponseRate": 0.24
+    },
+    "scores": {
+      "refiPropensity": 0.71,
+      "churnRisk": 0.28,
+      "purchaseIntent": 0.03,
+      "expectedValue": 9242,
+      "msrLtv": 54243
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-42",
+    "firstName": "Test42",
+    "lastName": "User42",
+    "dateOfBirth": "1981-06-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90041",
+      "value": 1126207,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 388370,
+      "remainingBalance": 373086,
+      "currentRate": 5.02,
+      "originalAmount": 416672,
+      "ficoAtOrigination": 788,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2011-06-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 5089,
+      "taxesInsurance": 265,
+      "pmi": null,
+      "currentApr": 2.13
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 169,
+      "previousResponseRate": 0.65
+    },
+    "scores": {
+      "refiPropensity": 0.41,
+      "churnRisk": 0.91,
+      "purchaseIntent": 0.29,
+      "expectedValue": 6686,
+      "msrLtv": 40623
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-43",
+    "firstName": "Test43",
+    "lastName": "User43",
+    "dateOfBirth": "1982-07-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90042",
+      "value": 383226,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 428305,
+      "remainingBalance": 424429,
+      "currentRate": 4.56,
+      "originalAmount": 503992,
+      "ficoAtOrigination": 631,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2012-07-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": true,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4549,
+      "taxesInsurance": 1090,
+      "pmi": null,
+      "currentApr": 5.45
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 175,
+      "previousResponseRate": 0.87
+    },
+    "scores": {
+      "refiPropensity": 0.08,
+      "churnRisk": 0.21,
+      "purchaseIntent": 0.34,
+      "expectedValue": 8884,
+      "msrLtv": 16149
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-44",
+    "firstName": "Test44",
+    "lastName": "User44",
+    "dateOfBirth": "1983-08-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90043",
+      "value": 313888,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 758144,
+      "remainingBalance": 749528,
+      "currentRate": 4.34,
+      "originalAmount": 785342,
+      "ficoAtOrigination": 796,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2013-08-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 5310,
+      "taxesInsurance": 699,
+      "pmi": null,
+      "currentApr": 5.96
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 127,
+      "previousResponseRate": 0.43
+    },
+    "scores": {
+      "refiPropensity": 0.15,
+      "churnRisk": 0.61,
+      "purchaseIntent": 0.03,
+      "expectedValue": 567,
+      "msrLtv": 79303
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-45",
+    "firstName": "Test45",
+    "lastName": "User45",
+    "dateOfBirth": "1984-09-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": true,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90044",
+      "value": 641680,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 801240,
+      "remainingBalance": 781589,
+      "currentRate": 4.2,
+      "originalAmount": 872918,
+      "ficoAtOrigination": 638,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2014-09-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1507,
+      "taxesInsurance": 953,
+      "pmi": null,
+      "currentApr": 2.44
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 235,
+      "previousResponseRate": 0.68
+    },
+    "scores": {
+      "refiPropensity": 0.23,
+      "churnRisk": 0.87,
+      "purchaseIntent": 0.64,
+      "expectedValue": 7377,
+      "msrLtv": 67817
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-46",
+    "firstName": "Test46",
+    "lastName": "User46",
+    "dateOfBirth": "1985-01-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90045",
+      "value": 1149463,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 186831,
+      "remainingBalance": 176611,
+      "currentRate": 3.74,
+      "originalAmount": 218987,
+      "ficoAtOrigination": 738,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2015-01-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 5062,
+      "taxesInsurance": 652,
+      "pmi": 146,
+      "currentApr": 4.77
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 78,
+      "previousResponseRate": 0.55
+    },
+    "scores": {
+      "refiPropensity": 0.28,
+      "churnRisk": 0.99,
+      "purchaseIntent": 0.46,
+      "expectedValue": 4918,
+      "msrLtv": 41745
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-47",
+    "firstName": "Test47",
+    "lastName": "User47",
+    "dateOfBirth": "1986-02-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90046",
+      "value": 653844,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 387958,
+      "remainingBalance": 372779,
+      "currentRate": 6.53,
+      "originalAmount": 479777,
+      "ficoAtOrigination": 717,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2016-02-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2131,
+      "taxesInsurance": 439,
+      "pmi": 53,
+      "currentApr": 2.88
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 221,
+      "previousResponseRate": 0.87
+    },
+    "scores": {
+      "refiPropensity": 0.28,
+      "churnRisk": 0.13,
+      "purchaseIntent": 0.39,
+      "expectedValue": 7497,
+      "msrLtv": 34834
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-48",
+    "firstName": "Test48",
+    "lastName": "User48",
+    "dateOfBirth": "1987-03-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90047",
+      "value": 954792,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 821991,
+      "remainingBalance": 818617,
+      "currentRate": 3.21,
+      "originalAmount": 828321,
+      "ficoAtOrigination": 660,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2017-03-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4640,
+      "taxesInsurance": 305,
+      "pmi": null,
+      "currentApr": 3.08
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 100,
+      "previousResponseRate": 0.79
+    },
+    "scores": {
+      "refiPropensity": 0.4,
+      "churnRisk": 0.54,
+      "purchaseIntent": 0.05,
+      "expectedValue": 9757,
+      "msrLtv": 13676
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-49",
+    "firstName": "Test49",
+    "lastName": "User49",
+    "dateOfBirth": "1988-04-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90048",
+      "value": 900833,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 589435,
+      "remainingBalance": 583251,
+      "currentRate": 4.4,
+      "originalAmount": 613418,
+      "ficoAtOrigination": 773,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2018-04-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": true,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1990,
+      "taxesInsurance": 734,
+      "pmi": 212,
+      "currentApr": 2.2
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 343,
+      "previousResponseRate": 0.49
+    },
+    "scores": {
+      "refiPropensity": 0.29,
+      "churnRisk": 0.05,
+      "purchaseIntent": 0.78,
+      "expectedValue": 8779,
+      "msrLtv": 58850
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-50",
+    "firstName": "Test50",
+    "lastName": "User50",
+    "dateOfBirth": "1989-05-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90049",
+      "value": 463055,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 357849,
+      "remainingBalance": 350329,
+      "currentRate": 3.65,
+      "originalAmount": 420249,
+      "ficoAtOrigination": 753,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2019-05-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 0,
+      "forbearance": true,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1081,
+      "taxesInsurance": 263,
+      "pmi": null,
+      "currentApr": 4.86
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 361,
+      "previousResponseRate": 0.34
+    },
+    "scores": {
+      "refiPropensity": 0.99,
+      "churnRisk": 0.78,
+      "purchaseIntent": 0.83,
+      "expectedValue": 6286,
+      "msrLtv": 33446
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-51",
+    "firstName": "Test51",
+    "lastName": "User51",
+    "dateOfBirth": "1980-06-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90050",
+      "value": 1069729,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 394839,
+      "remainingBalance": 393957,
+      "currentRate": 5.91,
+      "originalAmount": 417325,
+      "ficoAtOrigination": 773,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2010-06-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": true,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3772,
+      "taxesInsurance": 357,
+      "pmi": 204,
+      "currentApr": 2.65
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 122,
+      "previousResponseRate": 0.63
+    },
+    "scores": {
+      "refiPropensity": 0.26,
+      "churnRisk": 0.62,
+      "purchaseIntent": 0.32,
+      "expectedValue": 2898,
+      "msrLtv": 25990
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-52",
+    "firstName": "Test52",
+    "lastName": "User52",
+    "dateOfBirth": "1981-07-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90051",
+      "value": 515213,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 933414,
+      "remainingBalance": 929989,
+      "currentRate": 2.31,
+      "originalAmount": 1005840,
+      "ficoAtOrigination": 617,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2011-07-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 3847,
+      "taxesInsurance": 427,
+      "pmi": 176,
+      "currentApr": 4.64
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 316,
+      "previousResponseRate": 0.96
+    },
+    "scores": {
+      "refiPropensity": 0.71,
+      "churnRisk": 0.76,
+      "purchaseIntent": 0.17,
+      "expectedValue": 1815,
+      "msrLtv": 64189
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-53",
+    "firstName": "Test53",
+    "lastName": "User53",
+    "dateOfBirth": "1982-08-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90052",
+      "value": 581503,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 165220,
+      "remainingBalance": 151534,
+      "currentRate": 3.19,
+      "originalAmount": 264780,
+      "ficoAtOrigination": 711,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2012-08-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": true,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1176,
+      "taxesInsurance": 1071,
+      "pmi": 222,
+      "currentApr": 5.45
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 74,
+      "previousResponseRate": 0.23
+    },
+    "scores": {
+      "refiPropensity": 0.53,
+      "churnRisk": 0.25,
+      "purchaseIntent": 0.19,
+      "expectedValue": 5460,
+      "msrLtv": 9911
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-54",
+    "firstName": "Test54",
+    "lastName": "User54",
+    "dateOfBirth": "1983-09-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": true,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90053",
+      "value": 993307,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 923427,
+      "remainingBalance": 921885,
+      "currentRate": 4.28,
+      "originalAmount": 933858,
+      "ficoAtOrigination": 600,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2013-09-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 5008,
+      "taxesInsurance": 918,
+      "pmi": null,
+      "currentApr": 5.29
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 23,
+      "previousResponseRate": 0.38
+    },
+    "scores": {
+      "refiPropensity": 0.5,
+      "churnRisk": 0.72,
+      "purchaseIntent": 0.08,
+      "expectedValue": 591,
+      "msrLtv": 41329
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-55",
+    "firstName": "Test55",
+    "lastName": "User55",
+    "dateOfBirth": "1984-01-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90054",
+      "value": 360393,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 544968,
+      "remainingBalance": 534419,
+      "currentRate": 4.15,
+      "originalAmount": 557213,
+      "ficoAtOrigination": 623,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2014-01-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": true,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": true,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 5086,
+      "taxesInsurance": 998,
+      "pmi": null,
+      "currentApr": 5.95
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 99,
+      "previousResponseRate": 0.09
+    },
+    "scores": {
+      "refiPropensity": 0.34,
+      "churnRisk": 0.02,
+      "purchaseIntent": 0.91,
+      "expectedValue": 5638,
+      "msrLtv": 29584
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-56",
+    "firstName": "Test56",
+    "lastName": "User56",
+    "dateOfBirth": "1985-02-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90055",
+      "value": 293877,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 750959,
+      "remainingBalance": 748144,
+      "currentRate": 2.32,
+      "originalAmount": 753790,
+      "ficoAtOrigination": 681,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2015-02-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3235,
+      "taxesInsurance": 414,
+      "pmi": 216,
+      "currentApr": 2.76
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 164,
+      "previousResponseRate": 0.85
+    },
+    "scores": {
+      "refiPropensity": 0.41,
+      "churnRisk": 0.14,
+      "purchaseIntent": 0.5,
+      "expectedValue": 3125,
+      "msrLtv": 10711
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-57",
+    "firstName": "Test57",
+    "lastName": "User57",
+    "dateOfBirth": "1986-03-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90056",
+      "value": 1099884,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 119665,
+      "remainingBalance": 117262,
+      "currentRate": 4.44,
+      "originalAmount": 210338,
+      "ficoAtOrigination": 663,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2016-03-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3205,
+      "taxesInsurance": 608,
+      "pmi": null,
+      "currentApr": 3.67
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 58,
+      "previousResponseRate": 0.57
+    },
+    "scores": {
+      "refiPropensity": 0.61,
+      "churnRisk": 0.9,
+      "purchaseIntent": 0.11,
+      "expectedValue": 4091,
+      "msrLtv": 51500
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-58",
+    "firstName": "Test58",
+    "lastName": "User58",
+    "dateOfBirth": "1987-04-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90057",
+      "value": 555872,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 223066,
+      "remainingBalance": 204992,
+      "currentRate": 2.74,
+      "originalAmount": 291221,
+      "ficoAtOrigination": 750,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2017-04-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 4070,
+      "taxesInsurance": 1153,
+      "pmi": null,
+      "currentApr": 2.01
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 298,
+      "previousResponseRate": 0.65
+    },
+    "scores": {
+      "refiPropensity": 0.91,
+      "churnRisk": 0.34,
+      "purchaseIntent": 0.15,
+      "expectedValue": 5633,
+      "msrLtv": 58882
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-59",
+    "firstName": "Test59",
+    "lastName": "User59",
+    "dateOfBirth": "1988-05-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90058",
+      "value": 760163,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 757959,
+      "remainingBalance": 743024,
+      "currentRate": 3.68,
+      "originalAmount": 825425,
+      "ficoAtOrigination": 702,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2018-05-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1368,
+      "taxesInsurance": 432,
+      "pmi": null,
+      "currentApr": 5.68
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 347,
+      "previousResponseRate": 0.31
+    },
+    "scores": {
+      "refiPropensity": 0.94,
+      "churnRisk": 0.89,
+      "purchaseIntent": 0.37,
+      "expectedValue": 3730,
+      "msrLtv": 34203
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-60",
+    "firstName": "Test60",
+    "lastName": "User60",
+    "dateOfBirth": "1989-06-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90059",
+      "value": 1054021,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 926944,
+      "remainingBalance": 914807,
+      "currentRate": 4.14,
+      "originalAmount": 996785,
+      "ficoAtOrigination": 748,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2019-06-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2184,
+      "taxesInsurance": 482,
+      "pmi": 55,
+      "currentApr": 2.99
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 257,
+      "previousResponseRate": 0.92
+    },
+    "scores": {
+      "refiPropensity": 0.06,
+      "churnRisk": 0.82,
+      "purchaseIntent": 0.99,
+      "expectedValue": 9466,
+      "msrLtv": 59713
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-61",
+    "firstName": "Test61",
+    "lastName": "User61",
+    "dateOfBirth": "1980-07-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90060",
+      "value": 623570,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 510590,
+      "remainingBalance": 500231,
+      "currentRate": 4.09,
+      "originalAmount": 542027,
+      "ficoAtOrigination": 731,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2010-07-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": true,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3000,
+      "taxesInsurance": 847,
+      "pmi": 185,
+      "currentApr": 3.25
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 85,
+      "previousResponseRate": 0.75
+    },
+    "scores": {
+      "refiPropensity": 0.48,
+      "churnRisk": 0.68,
+      "purchaseIntent": 0.39,
+      "expectedValue": 314,
+      "msrLtv": 86493
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-62",
+    "firstName": "Test62",
+    "lastName": "User62",
+    "dateOfBirth": "1981-08-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90061",
+      "value": 936043,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 819915,
+      "remainingBalance": 816962,
+      "currentRate": 3,
+      "originalAmount": 836411,
+      "ficoAtOrigination": 657,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2011-08-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4367,
+      "taxesInsurance": 1003,
+      "pmi": null,
+      "currentApr": 5.81
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 138,
+      "previousResponseRate": 0.62
+    },
+    "scores": {
+      "refiPropensity": 0.69,
+      "churnRisk": 0.07,
+      "purchaseIntent": 0.41,
+      "expectedValue": 8862,
+      "msrLtv": 2528
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-63",
+    "firstName": "Test63",
+    "lastName": "User63",
+    "dateOfBirth": "1982-09-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90062",
+      "value": 1025465,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 383821,
+      "remainingBalance": 380782,
+      "currentRate": 4.86,
+      "originalAmount": 402616,
+      "ficoAtOrigination": 764,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2012-09-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1752,
+      "taxesInsurance": 294,
+      "pmi": null,
+      "currentApr": 3.77
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 317,
+      "previousResponseRate": 0.65
+    },
+    "scores": {
+      "refiPropensity": 0.84,
+      "churnRisk": 0.84,
+      "purchaseIntent": 0.47,
+      "expectedValue": 8652,
+      "msrLtv": 48646
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-64",
+    "firstName": "Test64",
+    "lastName": "User64",
+    "dateOfBirth": "1983-01-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90063",
+      "value": 375331,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 619810,
+      "remainingBalance": 609665,
+      "currentRate": 2.57,
+      "originalAmount": 628297,
+      "ficoAtOrigination": 669,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2013-01-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4976,
+      "taxesInsurance": 932,
+      "pmi": 111,
+      "currentApr": 6.61
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 15,
+      "previousResponseRate": 0.95
+    },
+    "scores": {
+      "refiPropensity": 0.44,
+      "churnRisk": 0.86,
+      "purchaseIntent": 0.64,
+      "expectedValue": 1567,
+      "msrLtv": 41781
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-65",
+    "firstName": "Test65",
+    "lastName": "User65",
+    "dateOfBirth": "1984-02-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90064",
+      "value": 1030630,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 853621,
+      "remainingBalance": 849664,
+      "currentRate": 3.58,
+      "originalAmount": 875354,
+      "ficoAtOrigination": 712,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2014-02-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2599,
+      "taxesInsurance": 623,
+      "pmi": null,
+      "currentApr": 2.43
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 206,
+      "previousResponseRate": 0.74
+    },
+    "scores": {
+      "refiPropensity": 0.03,
+      "churnRisk": 0.39,
+      "purchaseIntent": 0.02,
+      "expectedValue": 7157,
+      "msrLtv": 7012
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-66",
+    "firstName": "Test66",
+    "lastName": "User66",
+    "dateOfBirth": "1985-03-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90065",
+      "value": 410760,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 512272,
+      "remainingBalance": 507784,
+      "currentRate": 3.05,
+      "originalAmount": 516317,
+      "ficoAtOrigination": 711,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2015-03-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 2394,
+      "taxesInsurance": 1148,
+      "pmi": 113,
+      "currentApr": 2.25
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 304,
+      "previousResponseRate": 0.15
+    },
+    "scores": {
+      "refiPropensity": 0.97,
+      "churnRisk": 0.87,
+      "purchaseIntent": 0.4,
+      "expectedValue": 7199,
+      "msrLtv": 20993
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-67",
+    "firstName": "Test67",
+    "lastName": "User67",
+    "dateOfBirth": "1986-04-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90066",
+      "value": 704811,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 852901,
+      "remainingBalance": 850120,
+      "currentRate": 2.9,
+      "originalAmount": 871787,
+      "ficoAtOrigination": 666,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2016-04-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2142,
+      "taxesInsurance": 1110,
+      "pmi": 239,
+      "currentApr": 6.12
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 274,
+      "previousResponseRate": 0.22
+    },
+    "scores": {
+      "refiPropensity": 0.77,
+      "churnRisk": 0.4,
+      "purchaseIntent": 0.34,
+      "expectedValue": 4231,
+      "msrLtv": 72514
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-68",
+    "firstName": "Test68",
+    "lastName": "User68",
+    "dateOfBirth": "1987-05-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90067",
+      "value": 658569,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 265597,
+      "remainingBalance": 252181,
+      "currentRate": 5.96,
+      "originalAmount": 329080,
+      "ficoAtOrigination": 726,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2017-05-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4703,
+      "taxesInsurance": 1188,
+      "pmi": 205,
+      "currentApr": 6.29
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 125,
+      "previousResponseRate": 0.72
+    },
+    "scores": {
+      "refiPropensity": 0.7,
+      "churnRisk": 0.48,
+      "purchaseIntent": 0.63,
+      "expectedValue": 9858,
+      "msrLtv": 59929
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-69",
+    "firstName": "Test69",
+    "lastName": "User69",
+    "dateOfBirth": "1988-06-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90068",
+      "value": 764224,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 556920,
+      "remainingBalance": 538433,
+      "currentRate": 6.32,
+      "originalAmount": 558383,
+      "ficoAtOrigination": 772,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2018-06-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 2292,
+      "taxesInsurance": 1190,
+      "pmi": null,
+      "currentApr": 6.06
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 124,
+      "previousResponseRate": 0.25
+    },
+    "scores": {
+      "refiPropensity": 0.07,
+      "churnRisk": 0.48,
+      "purchaseIntent": 0.14,
+      "expectedValue": 3554,
+      "msrLtv": 17499
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-70",
+    "firstName": "Test70",
+    "lastName": "User70",
+    "dateOfBirth": "1989-07-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90069",
+      "value": 449595,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 443315,
+      "remainingBalance": 426884,
+      "currentRate": 2.14,
+      "originalAmount": 451114,
+      "ficoAtOrigination": 748,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2019-07-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3770,
+      "taxesInsurance": 668,
+      "pmi": null,
+      "currentApr": 5.09
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 135,
+      "previousResponseRate": 0.62
+    },
+    "scores": {
+      "refiPropensity": 0.21,
+      "churnRisk": 0.23,
+      "purchaseIntent": 0.85,
+      "expectedValue": 1342,
+      "msrLtv": 41767
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-71",
+    "firstName": "Test71",
+    "lastName": "User71",
+    "dateOfBirth": "1980-08-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90070",
+      "value": 244347,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 732523,
+      "remainingBalance": 727021,
+      "currentRate": 6.66,
+      "originalAmount": 778375,
+      "ficoAtOrigination": 737,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2010-08-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 1942,
+      "taxesInsurance": 450,
+      "pmi": null,
+      "currentApr": 2.5
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 84,
+      "previousResponseRate": 0.53
+    },
+    "scores": {
+      "refiPropensity": 0.5,
+      "churnRisk": 0.06,
+      "purchaseIntent": 0.66,
+      "expectedValue": 8736,
+      "msrLtv": 851
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-72",
+    "firstName": "Test72",
+    "lastName": "User72",
+    "dateOfBirth": "1981-09-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90071",
+      "value": 762366,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 781753,
+      "remainingBalance": 763538,
+      "currentRate": 4.38,
+      "originalAmount": 852495,
+      "ficoAtOrigination": 696,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2011-09-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 4297,
+      "taxesInsurance": 301,
+      "pmi": 96,
+      "currentApr": 3.96
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 121,
+      "previousResponseRate": 0.92
+    },
+    "scores": {
+      "refiPropensity": 0.99,
+      "churnRisk": 0.84,
+      "purchaseIntent": 0.4,
+      "expectedValue": 1100,
+      "msrLtv": 20139
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-73",
+    "firstName": "Test73",
+    "lastName": "User73",
+    "dateOfBirth": "1982-01-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": true,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90072",
+      "value": 1198227,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 524296,
+      "remainingBalance": 523170,
+      "currentRate": 6.19,
+      "originalAmount": 552472,
+      "ficoAtOrigination": 628,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2012-01-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2479,
+      "taxesInsurance": 744,
+      "pmi": null,
+      "currentApr": 3.48
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 117,
+      "previousResponseRate": 0.48
+    },
+    "scores": {
+      "refiPropensity": 0.85,
+      "churnRisk": 0.16,
+      "purchaseIntent": 0.15,
+      "expectedValue": 8405,
+      "msrLtv": 60964
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-74",
+    "firstName": "Test74",
+    "lastName": "User74",
+    "dateOfBirth": "1983-02-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90073",
+      "value": 910737,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 739557,
+      "remainingBalance": 728372,
+      "currentRate": 4.89,
+      "originalAmount": 815716,
+      "ficoAtOrigination": 672,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2013-02-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2572,
+      "taxesInsurance": 281,
+      "pmi": null,
+      "currentApr": 5.1
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 77,
+      "previousResponseRate": 0.81
+    },
+    "scores": {
+      "refiPropensity": 0.6,
+      "churnRisk": 0.49,
+      "purchaseIntent": 0.93,
+      "expectedValue": 9919,
+      "msrLtv": 33503
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-75",
+    "firstName": "Test75",
+    "lastName": "User75",
+    "dateOfBirth": "1984-03-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90074",
+      "value": 883206,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 658872,
+      "remainingBalance": 640314,
+      "currentRate": 6.33,
+      "originalAmount": 662486,
+      "ficoAtOrigination": 704,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2014-03-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4107,
+      "taxesInsurance": 287,
+      "pmi": null,
+      "currentApr": 6.94
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 92,
+      "previousResponseRate": 0.37
+    },
+    "scores": {
+      "refiPropensity": 0.36,
+      "churnRisk": 0.48,
+      "purchaseIntent": 0.98,
+      "expectedValue": 704,
+      "msrLtv": 62758
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-76",
+    "firstName": "Test76",
+    "lastName": "User76",
+    "dateOfBirth": "1985-04-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90075",
+      "value": 339429,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 65184,
+      "remainingBalance": 51649,
+      "currentRate": 4.89,
+      "originalAmount": 148310,
+      "ficoAtOrigination": 658,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2015-04-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 5003,
+      "taxesInsurance": 1176,
+      "pmi": 163,
+      "currentApr": 6.61
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 228,
+      "previousResponseRate": 0.71
+    },
+    "scores": {
+      "refiPropensity": 0.34,
+      "churnRisk": 0.19,
+      "purchaseIntent": 0.27,
+      "expectedValue": 8614,
+      "msrLtv": 30593
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-77",
+    "firstName": "Test77",
+    "lastName": "User77",
+    "dateOfBirth": "1986-05-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90076",
+      "value": 682672,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 720797,
+      "remainingBalance": 701616,
+      "currentRate": 5.15,
+      "originalAmount": 741274,
+      "ficoAtOrigination": 613,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2016-05-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 4880,
+      "taxesInsurance": 226,
+      "pmi": 186,
+      "currentApr": 5.59
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 60,
+      "previousResponseRate": 0.92
+    },
+    "scores": {
+      "refiPropensity": 0.22,
+      "churnRisk": 0.39,
+      "purchaseIntent": 0.56,
+      "expectedValue": 1496,
+      "msrLtv": 38048
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-78",
+    "firstName": "Test78",
+    "lastName": "User78",
+    "dateOfBirth": "1987-06-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": true,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90077",
+      "value": 817681,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 69034,
+      "remainingBalance": 51437,
+      "currentRate": 2.91,
+      "originalAmount": 100407,
+      "ficoAtOrigination": 743,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2017-06-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 1500,
+      "taxesInsurance": 402,
+      "pmi": 110,
+      "currentApr": 3.08
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 324,
+      "previousResponseRate": 0.49
+    },
+    "scores": {
+      "refiPropensity": 0.66,
+      "churnRisk": 0.92,
+      "purchaseIntent": 0.88,
+      "expectedValue": 272,
+      "msrLtv": 1254
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-79",
+    "firstName": "Test79",
+    "lastName": "User79",
+    "dateOfBirth": "1988-07-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90078",
+      "value": 626578,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 168271,
+      "remainingBalance": 157880,
+      "currentRate": 3.14,
+      "originalAmount": 234324,
+      "ficoAtOrigination": 617,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2018-07-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 2042,
+      "taxesInsurance": 523,
+      "pmi": null,
+      "currentApr": 4.62
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 149,
+      "previousResponseRate": 0.48
+    },
+    "scores": {
+      "refiPropensity": 0.27,
+      "churnRisk": 0.89,
+      "purchaseIntent": 0.13,
+      "expectedValue": 2266,
+      "msrLtv": 37501
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-80",
+    "firstName": "Test80",
+    "lastName": "User80",
+    "dateOfBirth": "1989-08-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90079",
+      "value": 291281,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 697679,
+      "remainingBalance": 692645,
+      "currentRate": 3.75,
+      "originalAmount": 751464,
+      "ficoAtOrigination": 790,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2019-08-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4182,
+      "taxesInsurance": 650,
+      "pmi": 78,
+      "currentApr": 3.16
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 208,
+      "previousResponseRate": 0.68
+    },
+    "scores": {
+      "refiPropensity": 0.42,
+      "churnRisk": 0.04,
+      "purchaseIntent": 0.07,
+      "expectedValue": 5101,
+      "msrLtv": 78852
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-81",
+    "firstName": "Test81",
+    "lastName": "User81",
+    "dateOfBirth": "1980-09-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90080",
+      "value": 997722,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 903947,
+      "remainingBalance": 893565,
+      "currentRate": 2.87,
+      "originalAmount": 1002598,
+      "ficoAtOrigination": 629,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2010-09-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1340,
+      "taxesInsurance": 1141,
+      "pmi": null,
+      "currentApr": 6.29
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 26,
+      "previousResponseRate": 0.23
+    },
+    "scores": {
+      "refiPropensity": 0.59,
+      "churnRisk": 0.98,
+      "purchaseIntent": 0.55,
+      "expectedValue": 5806,
+      "msrLtv": 88500
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-82",
+    "firstName": "Test82",
+    "lastName": "User82",
+    "dateOfBirth": "1981-01-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90081",
+      "value": 736842,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 946338,
+      "remainingBalance": 927552,
+      "currentRate": 3.21,
+      "originalAmount": 1030174,
+      "ficoAtOrigination": 783,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2011-01-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1899,
+      "taxesInsurance": 1188,
+      "pmi": null,
+      "currentApr": 4.95
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 50,
+      "previousResponseRate": 0.16
+    },
+    "scores": {
+      "refiPropensity": 0.06,
+      "churnRisk": 0.2,
+      "purchaseIntent": 0.14,
+      "expectedValue": 4393,
+      "msrLtv": 24467
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-83",
+    "firstName": "Test83",
+    "lastName": "User83",
+    "dateOfBirth": "1982-02-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90082",
+      "value": 337917,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 497838,
+      "remainingBalance": 496230,
+      "currentRate": 4.15,
+      "originalAmount": 531534,
+      "ficoAtOrigination": 621,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2012-02-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": true,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1824,
+      "taxesInsurance": 951,
+      "pmi": null,
+      "currentApr": 5.11
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 205,
+      "previousResponseRate": 0.91
+    },
+    "scores": {
+      "refiPropensity": 0.71,
+      "churnRisk": 0.35,
+      "purchaseIntent": 0.91,
+      "expectedValue": 4078,
+      "msrLtv": 48469
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-84",
+    "firstName": "Test84",
+    "lastName": "User84",
+    "dateOfBirth": "1983-03-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90083",
+      "value": 749121,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 240256,
+      "remainingBalance": 229732,
+      "currentRate": 4.69,
+      "originalAmount": 327759,
+      "ficoAtOrigination": 796,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2013-03-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2794,
+      "taxesInsurance": 963,
+      "pmi": 146,
+      "currentApr": 6.96
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 354,
+      "previousResponseRate": 0.04
+    },
+    "scores": {
+      "refiPropensity": 0.35,
+      "churnRisk": 0.02,
+      "purchaseIntent": 0.17,
+      "expectedValue": 1337,
+      "msrLtv": 37157
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-85",
+    "firstName": "Test85",
+    "lastName": "User85",
+    "dateOfBirth": "1984-04-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90084",
+      "value": 582102,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 142309,
+      "remainingBalance": 141471,
+      "currentRate": 2.51,
+      "originalAmount": 199640,
+      "ficoAtOrigination": 603,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2014-04-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2156,
+      "taxesInsurance": 445,
+      "pmi": 107,
+      "currentApr": 5.67
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 8,
+      "previousResponseRate": 0.13
+    },
+    "scores": {
+      "refiPropensity": 0.08,
+      "churnRisk": 0.39,
+      "purchaseIntent": 0.79,
+      "expectedValue": 2865,
+      "msrLtv": 73501
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-86",
+    "firstName": "Test86",
+    "lastName": "User86",
+    "dateOfBirth": "1985-05-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90085",
+      "value": 236980,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 947010,
+      "remainingBalance": 946884,
+      "currentRate": 5.99,
+      "originalAmount": 1046677,
+      "ficoAtOrigination": 774,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2015-05-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 1060,
+      "taxesInsurance": 298,
+      "pmi": null,
+      "currentApr": 6.92
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 310,
+      "previousResponseRate": 0.54
+    },
+    "scores": {
+      "refiPropensity": 0.94,
+      "churnRisk": 0.26,
+      "purchaseIntent": 0.9,
+      "expectedValue": 2850,
+      "msrLtv": 3541
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-87",
+    "firstName": "Test87",
+    "lastName": "User87",
+    "dateOfBirth": "1986-06-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": false,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90086",
+      "value": 778238,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 676268,
+      "remainingBalance": 665783,
+      "currentRate": 5.69,
+      "originalAmount": 698830,
+      "ficoAtOrigination": 754,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2016-06-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": true,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4396,
+      "taxesInsurance": 307,
+      "pmi": 241,
+      "currentApr": 4.07
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 192,
+      "previousResponseRate": 0.8
+    },
+    "scores": {
+      "refiPropensity": 0.37,
+      "churnRisk": 0.16,
+      "purchaseIntent": 0.71,
+      "expectedValue": 7289,
+      "msrLtv": 84800
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-88",
+    "firstName": "Test88",
+    "lastName": "User88",
+    "dateOfBirth": "1987-07-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90087",
+      "value": 1019498,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 818983,
+      "remainingBalance": 807556,
+      "currentRate": 4.64,
+      "originalAmount": 898185,
+      "ficoAtOrigination": 710,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2017-07-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3331,
+      "taxesInsurance": 1085,
+      "pmi": 140,
+      "currentApr": 4.08
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 332,
+      "previousResponseRate": 0.7
+    },
+    "scores": {
+      "refiPropensity": 0.93,
+      "churnRisk": 0.06,
+      "purchaseIntent": 0.66,
+      "expectedValue": 314,
+      "msrLtv": 18178
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-89",
+    "firstName": "Test89",
+    "lastName": "User89",
+    "dateOfBirth": "1988-08-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90088",
+      "value": 648110,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 582221,
+      "remainingBalance": 566512,
+      "currentRate": 5.17,
+      "originalAmount": 604727,
+      "ficoAtOrigination": 790,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2018-08-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": true,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 3626,
+      "taxesInsurance": 1011,
+      "pmi": null,
+      "currentApr": 3.06
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 14,
+      "previousResponseRate": 0.76
+    },
+    "scores": {
+      "refiPropensity": 0.34,
+      "churnRisk": 0.9,
+      "purchaseIntent": 0.92,
+      "expectedValue": 1673,
+      "msrLtv": 84139
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-90",
+    "firstName": "Test90",
+    "lastName": "User90",
+    "dateOfBirth": "1989-09-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": true,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90089",
+      "value": 298664,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 794079,
+      "remainingBalance": 793811,
+      "currentRate": 5.03,
+      "originalAmount": 888760,
+      "ficoAtOrigination": 620,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2019-09-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": true,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 1368,
+      "taxesInsurance": 758,
+      "pmi": 221,
+      "currentApr": 3.48
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 48,
+      "previousResponseRate": 0.32
+    },
+    "scores": {
+      "refiPropensity": 0.52,
+      "churnRisk": 0.03,
+      "purchaseIntent": 0.19,
+      "expectedValue": 3756,
+      "msrLtv": 84588
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-91",
+    "firstName": "Test91",
+    "lastName": "User91",
+    "dateOfBirth": "1980-01-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90090",
+      "value": 762644,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 595813,
+      "remainingBalance": 594044,
+      "currentRate": 4.76,
+      "originalAmount": 599610,
+      "ficoAtOrigination": 636,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2010-01-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 2,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 3348,
+      "taxesInsurance": 422,
+      "pmi": null,
+      "currentApr": 4.49
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 15,
+      "previousResponseRate": 0.15
+    },
+    "scores": {
+      "refiPropensity": 0.73,
+      "churnRisk": 0.98,
+      "purchaseIntent": 0.22,
+      "expectedValue": 1737,
+      "msrLtv": 11448
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-92",
+    "firstName": "Test92",
+    "lastName": "User92",
+    "dateOfBirth": "1981-02-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": true,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90091",
+      "value": 638283,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 732330,
+      "remainingBalance": 716693,
+      "currentRate": 5.67,
+      "originalAmount": 770300,
+      "ficoAtOrigination": 635,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2011-02-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4146,
+      "taxesInsurance": 570,
+      "pmi": 170,
+      "currentApr": 4.68
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 320,
+      "previousResponseRate": 0.42
+    },
+    "scores": {
+      "refiPropensity": 0.26,
+      "churnRisk": 0.36,
+      "purchaseIntent": 0.09,
+      "expectedValue": 1890,
+      "msrLtv": 391
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-93",
+    "firstName": "Test93",
+    "lastName": "User93",
+    "dateOfBirth": "1982-03-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": true,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90092",
+      "value": 411825,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 54789,
+      "remainingBalance": 40564,
+      "currentRate": 3.88,
+      "originalAmount": 112915,
+      "ficoAtOrigination": 725,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2012-03-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 958,
+      "taxesInsurance": 362,
+      "pmi": null,
+      "currentApr": 4.55
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 297,
+      "previousResponseRate": 0.53
+    },
+    "scores": {
+      "refiPropensity": 0.81,
+      "churnRisk": 0.46,
+      "purchaseIntent": 0.8,
+      "expectedValue": 9478,
+      "msrLtv": 20452
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-94",
+    "firstName": "Test94",
+    "lastName": "User94",
+    "dateOfBirth": "1983-04-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90093",
+      "value": 520828,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 472295,
+      "remainingBalance": 453266,
+      "currentRate": 4.93,
+      "originalAmount": 569635,
+      "ficoAtOrigination": 648,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2013-04-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": true,
+      "impound": true,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4016,
+      "taxesInsurance": 276,
+      "pmi": null,
+      "currentApr": 2.19
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 79,
+      "previousResponseRate": 0.19
+    },
+    "scores": {
+      "refiPropensity": 0.55,
+      "churnRisk": 0.13,
+      "purchaseIntent": 0.37,
+      "expectedValue": 8086,
+      "msrLtv": 13823
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-95",
+    "firstName": "Test95",
+    "lastName": "User95",
+    "dateOfBirth": "1984-05-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90094",
+      "value": 1095163,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 690792,
+      "remainingBalance": 688050,
+      "currentRate": 2.52,
+      "originalAmount": 751458,
+      "ficoAtOrigination": 777,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2014-05-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4001,
+      "taxesInsurance": 263,
+      "pmi": null,
+      "currentApr": 3.34
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 66,
+      "previousResponseRate": 0.38
+    },
+    "scores": {
+      "refiPropensity": 0.07,
+      "churnRisk": 0.83,
+      "purchaseIntent": 0.33,
+      "expectedValue": 3743,
+      "msrLtv": 62590
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-96",
+    "firstName": "Test96",
+    "lastName": "User96",
+    "dateOfBirth": "1985-06-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": true,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "CA",
+      "city": "Los Angeles",
+      "zip": "90095",
+      "value": 601268,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 121948,
+      "remainingBalance": 117100,
+      "currentRate": 3.86,
+      "originalAmount": 137303,
+      "ficoAtOrigination": 624,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2015-06-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 1,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": true,
+      "payoffRequests": 0,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 4417,
+      "taxesInsurance": 719,
+      "pmi": 54,
+      "currentApr": 3
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 281,
+      "previousResponseRate": 0.04
+    },
+    "scores": {
+      "refiPropensity": 0.02,
+      "churnRisk": 0.77,
+      "purchaseIntent": 0.09,
+      "expectedValue": 3759,
+      "msrLtv": 37230
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-97",
+    "firstName": "Test97",
+    "lastName": "User97",
+    "dateOfBirth": "1986-07-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": false,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "OUT"
+    },
+    "property": {
+      "state": "TX",
+      "city": "Austin",
+      "zip": "90096",
+      "value": 542948,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 598065,
+      "remainingBalance": 593790,
+      "currentRate": 6.55,
+      "originalAmount": 651868,
+      "ficoAtOrigination": 753,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2016-07-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 2,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 2,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 2056,
+      "taxesInsurance": 447,
+      "pmi": null,
+      "currentApr": 2.13
+    },
+    "engagement": {
+      "websiteRegistered": true,
+      "daysSinceLastContact": 115,
+      "previousResponseRate": 0.16
+    },
+    "scores": {
+      "refiPropensity": 0.31,
+      "churnRisk": 0.06,
+      "purchaseIntent": 0.24,
+      "expectedValue": 8928,
+      "msrLtv": 72731
+    },
+    "marketSegment": "Entering Market"
+  },
+  {
+    "id": "CUST-98",
+    "firstName": "Test98",
+    "lastName": "User98",
+    "dateOfBirth": "1987-08-15",
+    "contact": {
+      "mobilePhone": true,
+      "homePhone": true,
+      "emailAddress": true,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "FL",
+      "city": "Miami",
+      "zip": "90097",
+      "value": 990132,
+      "type": "Condo"
+    },
+    "loan": {
+      "currentUpb": 260521,
+      "remainingBalance": 245188,
+      "currentRate": 3.92,
+      "originalAmount": 323470,
+      "ficoAtOrigination": 653,
+      "loanTerm": 240,
+      "remainingTerm": 220,
+      "originationDate": "2017-08-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 0,
+      "concurrentSecond": false
+    },
+    "payment": {
+      "monthlyPI": 4633,
+      "taxesInsurance": 236,
+      "pmi": null,
+      "currentApr": 2.44
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 88,
+      "previousResponseRate": 0
+    },
+    "scores": {
+      "refiPropensity": 0.48,
+      "churnRisk": 0.27,
+      "purchaseIntent": 0.63,
+      "expectedValue": 5878,
+      "msrLtv": 27725
+    },
+    "marketSegment": "Actively Shopping"
+  },
+  {
+    "id": "CUST-99",
+    "firstName": "Test99",
+    "lastName": "User99",
+    "dateOfBirth": "1988-09-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": true,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "NY",
+      "city": "Buffalo",
+      "zip": "90098",
+      "value": 270830,
+      "type": "Townhouse"
+    },
+    "loan": {
+      "currentUpb": 910920,
+      "remainingBalance": 899472,
+      "currentRate": 5.57,
+      "originalAmount": 933984,
+      "ficoAtOrigination": 777,
+      "loanTerm": 360,
+      "remainingTerm": 340,
+      "originationDate": "2018-09-01",
+      "occupancyType": "Owner",
+      "paymentType": "Fixed",
+      "biweekly": false,
+      "impound": false,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 910,
+      "taxesInsurance": 515,
+      "pmi": null,
+      "currentApr": 6.54
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 133,
+      "previousResponseRate": 0.64
+    },
+    "scores": {
+      "refiPropensity": 0.32,
+      "churnRisk": 0.02,
+      "purchaseIntent": 0.83,
+      "expectedValue": 1695,
+      "msrLtv": 27851
+    },
+    "marketSegment": "Not in Market"
+  },
+  {
+    "id": "CUST-100",
+    "firstName": "Test100",
+    "lastName": "User100",
+    "dateOfBirth": "1989-01-15",
+    "contact": {
+      "mobilePhone": false,
+      "homePhone": false,
+      "emailAddress": false,
+      "emailConsent": true,
+      "tcpaFlag": false,
+      "optStatus": "IN"
+    },
+    "property": {
+      "state": "WA",
+      "city": "Seattle",
+      "zip": "90099",
+      "value": 1068352,
+      "type": "SFR"
+    },
+    "loan": {
+      "currentUpb": 806362,
+      "remainingBalance": 805141,
+      "currentRate": 6.96,
+      "originalAmount": 885831,
+      "ficoAtOrigination": 706,
+      "loanTerm": 180,
+      "remainingTerm": 120,
+      "originationDate": "2019-01-01",
+      "occupancyType": "Investor",
+      "paymentType": "ARM",
+      "biweekly": false,
+      "impound": true,
+      "priorLates24m": 0,
+      "forbearance": false,
+      "inBankruptcy": false,
+      "lossMitigation": false,
+      "foreclosure": false,
+      "ceaseDesist": false,
+      "currentFlag": false,
+      "payoffRequests": 1,
+      "concurrentSecond": true
+    },
+    "payment": {
+      "monthlyPI": 1266,
+      "taxesInsurance": 420,
+      "pmi": 78,
+      "currentApr": 6.26
+    },
+    "engagement": {
+      "websiteRegistered": false,
+      "daysSinceLastContact": 315,
+      "previousResponseRate": 0.65
+    },
+    "scores": {
+      "refiPropensity": 0.25,
+      "churnRisk": 0.83,
+      "purchaseIntent": 0.87,
+      "expectedValue": 4919,
+      "msrLtv": 6966
+    },
+    "marketSegment": "Actively Shopping"
+  }
+]

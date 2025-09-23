@@ -1,0 +1,54 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+enum VersionStatus {
+  DRAFT
+  DEPLOYED
+}
+
+model Version {
+  id          String         @id @default(uuid())
+  name        String
+  note        String?
+  status      VersionStatus  @default(DRAFT)
+  createdAt   DateTime       @default(now())
+  deployedAt  DateTime?
+  createdBy   String         @default("system")
+  rules       Rule[]
+}
+
+model Rule {
+  id         String   @id @default(uuid())
+  name       String
+  priority   Int
+  conditions Json
+  actions    Json
+  isActive   Boolean  @default(true)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  versionId  String
+  version    Version  @relation(fields: [versionId], references: [id], onDelete: Cascade)
+
+  @@index([versionId, priority])
+}
+
+model AuditEvent {
+  id         String   @id @default(uuid())
+  eventType  String
+  message    String
+  versionId  String?
+  createdAt  DateTime @default(now())
+}

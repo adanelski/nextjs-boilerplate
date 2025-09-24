@@ -372,6 +372,48 @@ export default function Home() {
                     })()}
                   </div>
 
+                  {/* Coverage by rule for current vs previous */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {(() => {
+                      const currentCoverage = rules.map(r => {
+                        const count = outcomes.filter(o => o.current.ruleName === r.name).length
+                        const pct = outcomes.length ? Number(((count / outcomes.length) * 100).toFixed(1)) : 0
+                        return { name: r.name, pct }
+                      })
+                      const previousCoverage = previousRules.map(r => {
+                        const count = outcomes.filter(o => o.previous.ruleName === r.name).length
+                        const pct = outcomes.length ? Number(((count / outcomes.length) * 100).toFixed(1)) : 0
+                        return { name: r.name, pct }
+                      })
+                      return (
+                        <>
+                          <div className="card p-4">
+                            <div className="font-medium mb-2">Coverage (Current Rules)</div>
+                            <div className="space-y-1">
+                              {currentCoverage.map((c) => (
+                                <div key={`cur-${c.name}`} className="flex items-center justify-between text-sm">
+                                  <span className="text-gray-700">{c.name}</span>
+                                  <span className="font-medium">{c.pct}%</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div className="card p-4">
+                            <div className="font-medium mb-2">Coverage (Previous Rules)</div>
+                            <div className="space-y-1">
+                              {previousCoverage.map((c) => (
+                                <div key={`prev-${c.name}`} className="flex items-center justify-between text-sm">
+                                  <span className="text-gray-700">{c.name}</span>
+                                  <span className="font-medium">{c.pct}%</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </>
+                      )
+                    })()}
+                  </div>
+
                   <div className="overflow-auto rounded border border-slate-200">
                     <table className="min-w-full text-sm">
                       <thead className="bg-slate-50">

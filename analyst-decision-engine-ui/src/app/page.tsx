@@ -111,7 +111,10 @@ export default function Home() {
   const [selectedRuleId, setSelectedRuleId] = useState<string | null>(rules[0]?.id ?? null)
   const [status, setStatus] = useState<'DRAFT' | 'DEPLOYED'>('DRAFT')
   const [customers] = useState<Customer[]>(() => generateCustomers(100))
-  const [outcomes, setOutcomes] = useState<{ customerId: string; ruleId?: string; ruleName?: string; action?: string }[] | null>(null)
+  const [outcomes, setOutcomes] = useState<null | {
+    current: { customerId: string; ruleName?: string; action?: string; recapture: number }
+    previous: { customerId: string; ruleName?: string; action?: string; recapture: number }
+  }[]>(null)
 
   const selectedRule = useMemo(() => rules.find(r => r.id === selectedRuleId) ?? null, [rules, selectedRuleId])
 
@@ -149,18 +152,58 @@ export default function Home() {
     setRules(reordered)
   }
 
+  // Static previous version of rules for comparison (POC)
+  const previousRules: Rule[] = [
+    {
+      id: 'prev-1',
+      name: 'Legacy Refi Outreach',
+      priority: 1,
+      conditions: { type: 'GROUP', op: 'AND', children: [
+        { type: 'CONDITION', field: 'scores.refiPropensity', operator: '>', value: 0.5 },
+        { type: 'CONDITION', field: 'loan.currentUpb', operator: '>', value: 250000 },
+      ]},
+      action: { mode: 'SPECIFIC', channel: 'SMS', contentId: 'sms_legacy_101' },
+    },
+    {
+      id: 'prev-2',
+      name: 'Legacy Nurture',
+      priority: 2,
+      conditions: { type: 'GROUP', op: 'OR', children: [
+        { type: 'CONDITION', field: 'marketSegment', operator: 'IN', value: 'Not in Market' },
+        { type: 'CONDITION', field: 'contact.emailConsent', operator: 'FALSE' },
+      ]},
+      action: { mode: 'ML', communicationType: 'nurture', allowedChannels: ['EMAIL', 'PORTAL'] },
+    },
+  ]
+
+  function scoreRecapture(cust: Customer, actionStr: string): number {
+    // Simple POC scoring: base on propensity + channel weight
+    const base = Number(cust?.scores?.refiPropensity ?? 0)
+    const channelWeights: Record<string, number> = { EMAIL: 0.05, SMS: 0.08, MAIL: 0.03, PORTAL: 0.04, 'No Communication': -0.02 }
+    let weight = 0
+    if (/EMAIL/.test(actionStr)) weight = channelWeights.EMAIL
+    else if (/SMS/.test(actionStr)) weight = channelWeights.SMS
+    else if (/MAIL/.test(actionStr)) weight = channelWeights.MAIL
+    else if (/PORTAL/.test(actionStr)) weight = channelWeights.PORTAL
+    else weight = channelWeights['No Communication']
+    const score = Math.max(0, Math.min(1, base + weight))
+    return Number(score.toFixed(2))
+  }
+
+  function evalRuleset(ruleset: Rule[], cust: Customer) {
+    let matched: Rule | undefined
+    for (const r of ruleset.sort((a, b) => a.priority - b.priority)) {
+      if (evaluateCondition(r.conditions as any, cust)) { matched = r; break }
+    }
+    const action = matched ? actionSummary(matched.action) : 'No Communication'
+    return { ruleName: matched?.name, action, recapture: scoreRecapture(cust, action) }
+  }
+
   function runTest() {
     const results = customers.map(cust => {
-      let matched: Rule | undefined
-      for (const r of rules.sort((a, b) => a.priority - b.priority)) {
-        if (evaluateCondition(r.conditions as any, cust)) { matched = r; break }
-      }
-      return {
-        customerId: cust.id,
-        ruleId: matched?.id,
-        ruleName: matched?.name,
-        action: matched ? actionSummary(matched.action) : 'No Communication',
-      }
+      const current = evalRuleset([...rules], cust)
+      const previous = evalRuleset([...previousRules], cust)
+      return { current: { customerId: cust.id, ...current }, previous: { customerId: cust.id, ...previous } }
     })
     setOutcomes(results)
   }
@@ -304,27 +347,57 @@ export default function Home() {
                 <button onClick={runTest} className="btn">Run against 100 sample customers</button>
               </div>
               {outcomes && (
-                <div className="overflow-auto rounded border border-slate-200">
-                  <table className="min-w-full text-sm">
-                    <thead className="bg-slate-50">
-                      <tr>
-                        <th className="text-left px-3 py-2 border-b">Customer</th>
-                        <th className="text-left px-3 py-2 border-b">Segment</th>
-                        <th className="text-left px-3 py-2 border-b">Matched Rule</th>
-                        <th className="text-left px-3 py-2 border-b">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {outcomes.map((o, i) => (
-                        <tr key={`${o.customerId}-${i}`} className="odd:bg-white even:bg-slate-50">
-                          <td className="px-3 py-2 border-b">{o.customerId}</td>
-                          <td className="px-3 py-2 border-b">{customers[i]?.marketSegment}</td>
-                          <td className="px-3 py-2 border-b">{o.ruleName ?? '-'}</td>
-                          <td className="px-3 py-2 border-b">{o.action}</td>
+                <div className="space-y-4">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                    {(() => {
+                      const currentAvg = Number((outcomes.reduce((a, r) => a + r.current.recapture, 0) / outcomes.length).toFixed(3))
+                      const previousAvg = Number((outcomes.reduce((a, r) => a + r.previous.recapture, 0) / outcomes.length).toFixed(3))
+                      const delta = Number((currentAvg - previousAvg).toFixed(3))
+                      return (
+                        <>
+                          <div className="card p-4">
+                            <div className="text-xs text-gray-600">Avg Recapture (Current)</div>
+                            <div className="text-2xl font-semibold">{currentAvg}</div>
+                          </div>
+                          <div className="card p-4">
+                            <div className="text-xs text-gray-600">Avg Recapture (Previous)</div>
+                            <div className="text-2xl font-semibold">{previousAvg}</div>
+                          </div>
+                          <div className="card p-4">
+                            <div className="text-xs text-gray-600">Delta</div>
+                            <div className={`text-2xl font-semibold ${delta >= 0 ? 'text-green-600' : 'text-red-600'}`}>{delta}</div>
+                          </div>
+                        </>
+                      )
+                    })()}
+                  </div>
+
+                  <div className="overflow-auto rounded border border-slate-200">
+                    <table className="min-w-full text-sm">
+                      <thead className="bg-slate-50">
+                        <tr>
+                          <th className="text-left px-3 py-2 border-b">Customer</th>
+                          <th className="text-left px-3 py-2 border-b">Segment</th>
+                          <th className="text-left px-3 py-2 border-b">Current Decision</th>
+                          <th className="text-left px-3 py-2 border-b">Current Recapture</th>
+                          <th className="text-left px-3 py-2 border-b">Previous Decision</th>
+                          <th className="text-left px-3 py-2 border-b">Previous Recapture</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {outcomes.map((o, i) => (
+                          <tr key={`${o.current.customerId}-${i}`} className="odd:bg-white even:bg-slate-50">
+                            <td className="px-3 py-2 border-b">{o.current.customerId}</td>
+                            <td className="px-3 py-2 border-b">{customers[i]?.marketSegment}</td>
+                            <td className="px-3 py-2 border-b">{o.current.ruleName ?? '-' } — {o.current.action}</td>
+                            <td className="px-3 py-2 border-b">{o.current.recapture}</td>
+                            <td className="px-3 py-2 border-b">{o.previous.ruleName ?? '-' } — {o.previous.action}</td>
+                            <td className="px-3 py-2 border-b">{o.previous.recapture}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               )}
             </div>
